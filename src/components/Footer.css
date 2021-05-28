@@ -1,0 +1,17 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #032541;
+}
+
+.footer_text {
+  color: antiquewhite;
+  font-size: 1rem;
+  margin: 5px 0;
+}

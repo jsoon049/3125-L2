@@ -4,7 +4,7 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <div className="container">
+    <div className="header">
       <ul className="nav-links">
         <li>
           <Link to="/">Customer</Link>

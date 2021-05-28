@@ -3,8 +3,8 @@ import React from "react";
 export const Customer = () => {
   // State used to track user preferences
   const [state, setState] = React.useState({
-    lactose: JSON.parse(sessionStorage.getItem("lactose")) || false,
-    nuts: JSON.parse(sessionStorage.getItem("nuts")) || false,
+    lactose: JSON.parse(sessionStorage.getItem("lactoseFree")) || false,
+    nuts: JSON.parse(sessionStorage.getItem("nutFree")) || false,
     organic: JSON.parse(sessionStorage.getItem("organic")) || false,
   });
 
@@ -17,8 +17,8 @@ export const Customer = () => {
 
   // Add user preferences to session storage
   const sendUserInfo = () => {
-    sessionStorage.setItem("lactose", JSON.stringify(state.lactose));
-    sessionStorage.setItem("nuts", JSON.stringify(state.nuts));
+    sessionStorage.setItem("lactoseFree", JSON.stringify(state.lactose));
+    sessionStorage.setItem("nutFree", JSON.stringify(state.nuts));
     sessionStorage.setItem("organic", JSON.stringify(state.organic));
     alert("Saved Preferences!")
   };
@@ -34,7 +34,7 @@ export const Customer = () => {
             defaultChecked={state.lactose}
             name="lactose"
           />{" "}
-          Are you lactose-intolerant?
+          Would you like to see our lactose-free products?
         </label>
         <label>
           <input
@@ -43,7 +43,7 @@ export const Customer = () => {
             defaultChecked={state.nuts}
             name="nuts"
           />{" "}
-          Do you have any nut allergies?
+          Would you like to see our nut-free products?
         </label>
         <label>
           <input
@@ -52,7 +52,7 @@ export const Customer = () => {
             defaultChecked={state.organic}
             name="organic"
           />{" "}
-          Do you have a preference for organic products?
+          Would you like to see our organic products?
         </label>
       </div>
       <button className="btn" onClick={sendUserInfo}>

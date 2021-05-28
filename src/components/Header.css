@@ -1,9 +1,9 @@
 /* Header Styles */
-.container {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
+  padding: 15px 0;
   background-color: #032541;
 }
 
@@ -28,7 +28,3 @@ a:hover {
   display: inline-block;
   margin-right: 30px;
 }
-
-/* .nav-links li:last-child {
-  margin-right: 0;
-} */

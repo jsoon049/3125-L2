@@ -1,0 +1,16 @@
+.prod_container {
+    text-align: center;
+}
+
+.prod_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr; /* 3 columns */
+    grid-template-rows: 3fr 3fr 3fr; /* 3 rows */
+}
+
+.prod_ul {
+    text-align: center;
+    border: 1px solid lightgrey;
+    margin: 10px 25px;
+    padding: 10px;
+}

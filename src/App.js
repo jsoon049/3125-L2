@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Customer } from "./components/Customer";
 import { Product } from "./components/Product";
 import { Cart } from "./components/Cart";
+import { Footer } from "./components/Footer";
 import "./App.css";
 import { GlobalProvider } from "./components/GlobalState";
 
@@ -23,6 +24,7 @@ function App() {
             <Cart />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </GlobalProvider>
   );
