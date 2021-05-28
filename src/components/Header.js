@@ -5,6 +5,7 @@ import "./Header.css";
 export const Header = () => {
   return (
     <div className="header">
+      <h2 className="brand">Nature's Own</h2>
       <ul className="nav-links">
         <li>
           <Link to="/">Customer</Link>

@@ -4,13 +4,14 @@
 
 .prod_wrapper {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr; /* 3 columns */
-    grid-template-rows: 3fr 3fr 3fr; /* 3 rows */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 3 columns */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 rows */
+    /* grid-gap: 0px 10px; */
 }
 
 .prod_ul {
     text-align: center;
     border: 1px solid lightgrey;
-    margin: 10px 25px;
+    margin: 10px 20px;
     padding: 10px;
 }

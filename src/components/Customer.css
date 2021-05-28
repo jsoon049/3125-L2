@@ -1,0 +1,13 @@
+.customerContainer {
+    text-align: center;
+}
+
+.customerTitle {
+    margin-bottom: 35px;
+}
+
+label {
+    display: block;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
