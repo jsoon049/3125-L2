@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "name": "yogurt",
+            "price": "2.50",
+            "lactose": "y",
+            "nuts": "n",
+            "organic": "n"
+        },
+        {
+            "name": "almond",
+            "price": "0.99",
+            "lactose": "n",
+            "nuts": "y",
+            "organic": "y"
+        },
+        {
+            "name": "granola",
+            "price": "3.25",
+            "lactose": "n",
+            "nuts": "y",
+            "organic": "n"
+        },
+        {
+            "name": "salmon",
+            "price": "10.50",
+            "lactose": "n",
+            "nuts": "n",
+            "organic": "n"
+        }
+    ]
+}

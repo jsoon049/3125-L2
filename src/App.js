@@ -5,23 +5,26 @@ import { Customer } from "./components/Customer";
 import { Product } from "./components/Product";
 import { Cart } from "./components/Cart";
 import "./App.css";
+import { GlobalProvider } from "./components/GlobalState";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/">
-          <Customer />
-        </Route>
-        <Route path="/product">
-          <Product />
-        </Route>
-        <Route path="/cart">
-          <Cart />
-        </Route>
-      </Switch>
-    </Router>
+    <GlobalProvider>
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Customer />
+          </Route>
+          <Route path="/product">
+            <Product />
+          </Route>
+          <Route path="/cart">
+            <Cart />
+          </Route>
+        </Switch>
+      </Router>
+    </GlobalProvider>
   );
 }
 
