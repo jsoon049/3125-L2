@@ -8,13 +8,13 @@ export const Header = () => {
       <h2 className="brand">Nature's Own</h2>
       <ul className="nav-links">
         <li>
-          <Link to="/3125-L2/">Customer</Link>
+          <Link to="/">Customer</Link>
         </li>
         <li>
-          <Link to="/3125-L2/product">Product</Link>
+          <Link to="/product">Product</Link>
         </li>
         <li>
-          <Link to="/3125-L2/cart">Cart</Link>
+          <Link to="/cart">Cart</Link>
         </li>
       </ul>
     </div>

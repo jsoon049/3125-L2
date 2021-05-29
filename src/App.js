@@ -14,13 +14,13 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/3125-L2/">
+          <Route exact path="/">
             <Customer />
           </Route>
-          <Route path="/3125-L2/product">
+          <Route path="/product">
             <Product />
           </Route>
-          <Route path="/3125-L2/cart">
+          <Route path="/cart">
             <Cart />
           </Route>
         </Switch>

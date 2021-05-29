@@ -100,24 +100,29 @@ export const Product = () => {
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // Filter products based on user preferences
-    var lactose = JSON.parse(sessionStorage.getItem("lactoseFree"));
-    var nuts = JSON.parse(sessionStorage.getItem("nutFree"));
-    var organic = JSON.parse(sessionStorage.getItem("organic"));
     let product_names = [];
+    if(sessionStorage.getItem("lactoseFree") != null) {
+      var lactose = JSON.parse(sessionStorage.getItem("lactoseFree"));
+      var nuts = JSON.parse(sessionStorage.getItem("nutFree"));
+      var organic = JSON.parse(sessionStorage.getItem("organic"));
 
-    for (let i = 0; i < products.length; i += 1) {
-      if (lactose === false && nuts === false && organic === false) {
-        product_names.push(products[i]);
+      for (let i = 0; i < products.length; i += 1) {
+        if (lactose === false && nuts === false && organic === false) {
+          product_names.push(products[i]);
+        }
+        if (lactose === true && products[i].lactoseFree === true) {
+          product_names.push(products[i]);
+        }
+        if (nuts === true && products[i].nutFree === true) {
+          product_names.push(products[i]);
+        }
+        if (organic === true && products[i].organic === true) {
+          product_names.push(products[i]);
+        }
       }
-      if (lactose === true && products[i].lactoseFree === true) {
-        product_names.push(products[i]);
-      }
-      if (nuts === true && products[i].nutFree === true) {
-        product_names.push(products[i]);
-      }
-      if (organic === true && products[i].organic === true) {
-        product_names.push(products[i]);
-      }
+    }
+    else{
+      for (let i = 0; i < products.length; i += 1) { product_names.push(products[i]); }
     }
     let sorted = product_names;
     product_names.sort((a, b) => a.price - b.price);
