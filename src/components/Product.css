@@ -1,37 +1,47 @@
 .prod_container {
-    text-align: center;
+  text-align: center;
 }
 
 .prod_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
-    grid-template-rows: 1fr 1fr 1fr; /* 3 rows */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 3 columns */
 }
 
 .prod_ul {
-    text-align: center;
-    border: 1px solid black;
-    margin: 10px 20px;
-    padding: 10px;
-    background-color: #dfecf0; 
+  text-align: center;
+  border: 1px solid black;
+  margin: 10px 20px;
+  padding: 10px;
+  background-color: #dfecf0;
 }
 
 .prodtext {
-    font-weight: 700;
+  font-weight: 700;
+  font-size: 12px
 }
 
 .prodName {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .prodPrice {
-    margin: 0;
-    margin-bottom: 10px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
+@media only screen and (min-device-width: 768px) {
+  .prod_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 rows */
+  }
+  .prodtext {
+    font-size: 16px
+  }
+}
 
 @media only screen and (min-width: 1224px) {
-    .prod_wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
-    }
+  .prod_wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+  }
 }

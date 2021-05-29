@@ -79,10 +79,10 @@ export const Product = () => {
       price: 2.35,
     },
     {
-      name: "Rice",
+      name: "Bread",
       lactoseFree: true,
       nutFree: true,
-      organic: false,
+      organic: true,
       price: 10.0,
     },
     {

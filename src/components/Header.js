@@ -5,7 +5,7 @@ import "./Header.css";
 export const Header = () => {
   return (
     <div className="header">
-      <h2 className="brand">Nature's Own</h2>
+      <h2 className="brand">Got Foodz</h2>
       <ul className="nav-links">
         <li>
           <Link to="/3125-L2/">Customer</Link>
