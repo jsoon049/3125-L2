@@ -28,6 +28,7 @@ export const Customer = () => {
     <div>
       <h1 className="customerTitle">Customer Preferences</h1>
       <div className="customerContainer">
+        <p>If applicable, please select one of the categories below</p>
         <div className="checkbox-wrapper">
           <label>
             Would you like to see our lactose-free products?

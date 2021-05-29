@@ -11,6 +11,7 @@ export const Cart = () => {
     for (let i = 0; i < sorted.length; i += 1) {
       totalPrice += sorted[i].price;
     }
+    totalPrice = parseFloat(totalPrice).toFixed(2);
     sorted.sort((a, b) => a.price - b.price);
   }
 

@@ -6,88 +6,88 @@ export const Product = () => {
   // List of products
   var products = [
     {
-      name: "yogurt",
+      name: "Yogurt",
       lactoseFree: false,
       nutFree: true,
       organic: false,
       price: 4,
     },
     {
-      name: "almond",
-      lactoseFree: true,
-      nutFree: false,
-      organic: true,
-      price: 2.35,
-    },
-    {
-      name: "granola",
+      name: "Almond Granola",
       lactoseFree: true,
       nutFree: false,
       organic: false,
-      price: 10.0,
+      price: 2.35,
     },
     {
-      name: "salmon",
+      name: "Salmon",
       lactoseFree: true,
       nutFree: true,
       organic: false,
       price: 1.0,
+    },
+    {
+      name: "Apple",
+      lactoseFree: true,
+      nutFree: true,
+      organic: true,
+      price: 10.0,
     },
 
     //Duplicates start here
     {
-      name: "yogurt2",
-      lactoseFree: false,
+      name: "Banana",
+      lactoseFree: true,
       nutFree: true,
-      organic: false,
+      organic: true,
       price: 4,
     },
     {
-      name: "almond2",
+      name: "Chips",
       lactoseFree: true,
-      nutFree: false,
-      organic: true,
+      nutFree: true,
+      organic: false,
       price: 2.35,
     },
     {
-      name: "granola2",
+      name: "Nutella",
       lactoseFree: true,
       nutFree: false,
       organic: false,
       price: 10.0,
     },
     {
-      name: "salmon2",
+      name: "Brocolli",
       lactoseFree: true,
       nutFree: true,
-      organic: false,
+      organic: true,
       price: 1.0,
     },
     //Row 3 duplicates
     {
-      name: "yogurt3",
+      name: "Milk",
       lactoseFree: false,
       nutFree: true,
       organic: false,
       price: 4,
     },
     {
-      name: "almond3",
-      lactoseFree: true,
+      name: "Peanut Butter Ice Cream",
+      lactoseFree: false,
       nutFree: false,
-      organic: true,
+      organic: false,
       price: 2.35,
     },
     {
-      name: "granola3",
+      name: "Rice",
       lactoseFree: true,
-      nutFree: false,
+      nutFree: true,
       organic: false,
       price: 10.0,
     },
     {
-      name: "salmon3",
-      lactoseFree: true,
+      name: "Cheese",
+      lactoseFree: false,
       nutFree: true,
       organic: false,
       price: 1.0,
@@ -110,13 +110,13 @@ export const Product = () => {
         if (lactose === false && nuts === false && organic === false) {
           product_names.push(products[i]);
         }
-        if (lactose === true && products[i].lactoseFree === true) {
+        else if (lactose === true && products[i].lactoseFree === true) {
           product_names.push(products[i]);
         }
-        if (nuts === true && products[i].nutFree === true) {
+        else if (nuts === true && products[i].nutFree === true) {
           product_names.push(products[i]);
         }
-        if (organic === true && products[i].organic === true) {
+        else if (organic === true && products[i].organic === true) {
           product_names.push(products[i]);
         }
       }
