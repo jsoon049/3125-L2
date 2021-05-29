@@ -15,11 +15,3 @@ h1 {
   color: #5e81d1;
   text-align: center;
 }
-
-.appContainer {
-  padding-bottom: 80px;
-}
-
-.customerContainer, .prod_container, .cartContainer {
-  /* background-color: #f16b44; */
-}

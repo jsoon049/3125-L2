@@ -6,6 +6,7 @@ label {
     display: block;
     margin-bottom: 35px;
     font-size: 18px;
+    font-weight: 500;
 }
 
 input {
@@ -23,6 +24,7 @@ input {
 
 .instructions {
     margin-top: 0;
-    margin-bottom: 25px;
-    font-weight: 500;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #5e81d1;
 }

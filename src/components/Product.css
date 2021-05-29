@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; /* 3 columns */
     grid-template-rows: 1fr 1fr 1fr; /* 3 rows */
-    /* grid-gap: 0px 10px; */
 }
 
 .prod_ul {
@@ -19,5 +18,13 @@
 
 .prodtext {
     font-weight: 700;
-    font-size: 18px;
+}
+
+.prodName {
+    margin: 10px 0;
+}
+
+.prodPrice {
+    margin: 0;
+    margin-bottom: 10px;
 }

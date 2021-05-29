@@ -6,8 +6,8 @@ export const Card = ({ product }) => {
 
   return (
     <div className="product-card">
-      <p className="prodtext">{product.name}</p>
-      <p className="prodtext">{'$' + product.price}</p>
+      <p className="prodtext prodName">{product.name}</p>
+      <p className="prodtext prodPrice">{'$' + product.price}</p>
       <button className="btn" onClick={() => addToCart(product)}>
         Add To Cart
       </button>
