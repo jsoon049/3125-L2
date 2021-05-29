@@ -1,13 +1,14 @@
 html {
-  background-color: #dfecf0;
+  background-color: #f6f6e0;
 }
 
 button {
   margin-bottom: 15px;
-  padding: 5px 10px;
+  padding: 5px 15px;
   cursor: pointer;
-  background-color: lightsalmon;
-  font-weight: 700;
+  background-color: #ffc6af;
+  font-weight: 500;
+  border: 1px solid black;
 }
 
 h1 {
