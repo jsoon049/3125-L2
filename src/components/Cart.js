@@ -14,19 +14,21 @@ export const Cart = () => {
   }
 
   return (
-    <div className="cartContainer">
+    <div>
       <h1>Your Cart</h1>
-      <div className="cart-wrapper">
-      {cart.length > 0 ? (
-          <div className="movie-grid">
-            {sorted.map((product, i) => (
-              <p key={i}>{product.name + " $" + product.price}</p>
-            ))}
-            <p className="totalPrice">{'Total Price: ' + '$' + totalPrice}</p>
-          </div>
-        ) : (
-          <h2 className="no-items">No items in your shopping cart!</h2>
-        )}
+      <div className="cartContainer">
+        <div className="cart-wrapper">
+        {cart.length > 0 ? (
+            <div className="movie-grid">
+              {sorted.map((product, i) => (
+                <p key={i}>{product.name + " $" + product.price}</p>
+              ))}
+              <p className="totalPrice">{'Total Price: ' + '$' + totalPrice}</p>
+            </div>
+          ) : (
+            <h2 className="no-items">No items in your shopping cart!</h2>
+          )}
+        </div>
       </div>
     </div>
   );
