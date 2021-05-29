@@ -4,7 +4,7 @@
 
 .prod_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* 3 columns */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
     grid-template-rows: 1fr 1fr 1fr; /* 3 rows */
 }
 
@@ -27,4 +27,11 @@
 .prodPrice {
     margin: 0;
     margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 1224px) {
+    .prod_wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+    }
 }

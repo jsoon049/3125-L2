@@ -25,7 +25,7 @@ export const Customer = () => {
   };
 
   return (
-    <div>
+    <div className="customer">
       <h1 className="customerTitle">Customer Preferences</h1>
       <div className="customerContainer">
         <p className="instructions">If applicable, please select one or more of the categories below</p>

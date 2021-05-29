@@ -1,11 +1,11 @@
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
   padding: 15px 0;
   background-color: #88b444;
   text-align: center;
+  margin-top: 20px;
 }
 
 .footer_text {
@@ -13,4 +13,11 @@
   font-size: 1rem;
   font-weight: 700;
   margin: 0;
+}
+
+@media only screen and (min-width: 1224px) {
+  .footer {
+    position: fixed;
+    margin-top: 0;
+  }
 }

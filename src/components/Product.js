@@ -150,7 +150,7 @@ export const Product = () => {
   }, []); // Empty array for second parameter means only run on mount and unmount. Without empty array useEffect runs in an infinite loop
 
   return (
-    <div>
+    <div className="prod">
       <h1>Products</h1>
       <div className="prod_container">
         <div className="prod_wrapper">

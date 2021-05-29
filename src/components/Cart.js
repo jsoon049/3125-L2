@@ -16,7 +16,7 @@ export const Cart = () => {
   }
 
   return (
-    <div>
+    <div className="cart">
       <h1>Your Cart</h1>
       <div className="cartContainer">
         {cart.length > 0 ? (

@@ -2,6 +2,14 @@ html {
   background-color: #f6f6e0;
 }
 
+html, body, #root, .appContainer {
+  height: 100%;
+}
+
+.customer, .cart {
+  height: 78%;
+}
+
 button {
   margin-bottom: 15px;
   padding: 5px 15px;
@@ -14,4 +22,17 @@ button {
 h1 {
   color: #5e81d1;
   text-align: center;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 1224px) {
+  html, body, #root, .appContainer, .prod, .customer, .cart {
+    height: 90%;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  html, body, #root, .appContainer, .prod, .customer, .cart{
+    height: 100%;
+  }
 }
