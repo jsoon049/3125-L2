@@ -12,6 +12,9 @@
   align-items: center;
   padding: 15px 0;
   background-color: #88b444;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 a {

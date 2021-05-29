@@ -10,23 +10,25 @@ import { GlobalProvider } from "./components/GlobalState";
 
 function App() {
   return (
-    <GlobalProvider>
-      <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/3125-L2/">
-            <Customer />
-          </Route>
-          <Route path="/3125-L2/product">
-            <Product />
-          </Route>
-          <Route path="/3125-L2/cart">
-            <Cart />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
-    </GlobalProvider>
+    <div className="appContainer">
+      <GlobalProvider>
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/3125-L2/">
+              <Customer />
+            </Route>
+            <Route path="/3125-L2/product">
+              <Product />
+            </Route>
+            <Route path="/3125-L2/cart">
+              <Cart />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
+      </GlobalProvider>
+    </div>
   );
 }
 
