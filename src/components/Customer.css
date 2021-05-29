@@ -11,3 +11,14 @@ label {
     margin-bottom: 35px;
     font-size: 18px;
 }
+
+input {
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-wrapper {
+    display: inline-block;
+    border: 1px solid;
+    padding: 20px;
+}

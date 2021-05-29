@@ -3,15 +3,14 @@
   left: 0;
   bottom: 0;
   right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px 0;
-  background-color: #032541;
+  background-color: #88b444;
+  text-align: center;
 }
 
 .footer_text {
-  color: antiquewhite;
+  color: white;
   font-size: 1rem;
   margin: 5px 0;
+  font-weight: 700;
 }

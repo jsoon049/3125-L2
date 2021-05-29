@@ -11,7 +11,8 @@
 
 .prod_ul {
     text-align: center;
-    border: 1px solid lightgrey;
+    border: 1px solid black;
     margin: 10px 20px;
     padding: 10px;
+    /* background-color: #d7eff5; */
 }

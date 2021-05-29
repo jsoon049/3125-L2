@@ -13,7 +13,7 @@ export const GlobalProvider = (props) => {
 
   // actions
   const addToCart = (product) => {
-    alert(`${product.name}` + " added to cart")
+    alert(`${product.name} added to cart`)
     dispatch({ type: "ADD_ITEM", payload: product });
   };
   
